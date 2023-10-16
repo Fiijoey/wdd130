@@ -40,8 +40,7 @@ body {
     margin: 200px 0;
 }
 .card-img {
-    border: 10px;
-    border-color: #ece77e;
+    border: 10px #ece77e solid;
 }
 main section img {
     box-sizing: border-box;

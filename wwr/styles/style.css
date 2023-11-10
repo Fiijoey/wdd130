@@ -15,6 +15,7 @@
 }
 #about-img{
     width: 100%;
+    height: auto;
 }
 #about{
     text-align: center;
@@ -280,5 +281,34 @@ h2{
     }
     footer {
         margin-top: 25px;
+    }
+    #faq{
+        display: block;
+        height: auto;
+    }
+    .topic{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .topic p{
+        font-size: 0.7em;
+        margin-left: 20px;
+    }
+    .topic h2{
+        font-size: 1em;
+    }
+    .faq-body{
+        margin-top: 100px;
+    }
+    #about{
+        text-align: center;
+        color: white;
+        font-family: 'Julius Sans One','Segoe UI', Tahoma, sans-serif;
+        grid-column: 2/3;
+        margin-top: -150px;
+        font-size: 3em;
+    }
+    #faq-box{
+        align-items: center;
     }
 }

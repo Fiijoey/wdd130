@@ -1,0 +1,279 @@
+/*Global Css*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&display=swap');
+:root {
+    --primary-color: #850578   ;
+    --secondary-color: #095e9b ;
+    --accent1-color: #FA961C;
+    --accent2-color: #EBF5DF;
+
+    --heading-font: Raleway, sans-serif;
+  --paragraph-font: Montserrat, sans-serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+
+    --headline-color-on-white: #100b00;
+
+    --headline-color-on-white: #850578;  /* headlines on a white background */ 
+    --headline-color-on-color: #EBF5DF; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #095e9b; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #EBF5DF; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #850578  ;
+    --nav-link-color: #000000;
+    --nav-background-color: #FA961C;
+    --nav-hover-link-color: #EBF5DF;
+    --nav-hover-background-color: #850578;
+
+}
+
+body {
+
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+    color: var(--accent3-color);
+    max-width: 1500px;
+    margin: 0 auto;
+
+}
+
+h1,
+
+h2,
+
+h3,
+
+h4,
+
+h5,
+
+h6 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: .75em;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent2-color);
+}
+
+
+
+/****************************************************************
+
+* *
+
+* default properties for all pages *
+
+* *
+
+*****************************************************************/
+
+/*  This rule name changes based upon the default button color   */
+
+.btn-blue {
+
+    background-color: var(--primary-color);
+
+    padding: 1em 2em;
+
+    color: var(--accent2-color);
+
+}
+
+.buttons {
+
+    grid-column: 1/-1;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-around;
+
+    margin: 0 30px;
+
+    border-radius: 20px;
+
+}
+
+/****************************************************************
+
+* *
+
+* header area properties *
+
+* *
+
+*****************************************************************/
+
+header {
+    display: grid;
+    grid-template-columns: 250px auto;
+    align-items: center;
+    background-color: var(--accent1-color);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    justify-items: center;
+}
+
+
+
+/*  HTML format for these next 2 rules
+
+*    <a class="nav-item" href="...">...</a>    */
+
+.nav-item {
+    color: var(--nav-link-color);
+    font-size: 1.5em;
+    padding: 2.5em;
+    min-width: 120px;
+}
+
+.nav-item:hover {
+    color: #fff;
+    background-color: var(--nav-hover-background-color);
+}
+
+
+
+/****************************************************************
+
+* *
+
+* footer area properties *
+
+* *
+
+*****************************************************************/
+
+footer {
+
+    background-color: var(--primary-color) ;
+    color: var(--accent2-color);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 50px;
+    margin-top: 50px;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    column-gap: 20px;
+}
+
+footer a:hover{
+    color: var(--accent1-color)
+}
+/*CSS for the home page.*/
+main{
+display: grid;    
+grid-template-columns: repeat(12, 1fr); 
+grid-template-rows: repeat(10, 35px);  
+gap: 3em 0;   
+}
+
+.banner{
+    width: 100%;
+    grid-column: 1/13;
+    z-index: ;
+}
+
+.banner-intro{
+    grid-column: 3/10;
+}
+.banner-intro h1{
+    color: var(--accent1-color);
+}
+
+.me{
+    width: 100%;
+    grid-row: 5/6;
+    grid-column: 3/6;
+    z-index: 1;
+}
+
+.banner-info{
+    grid-row: 4/10;
+    grid-column: 6/9;
+    background-color: var(--paragraph-background-color);
+    margin-top: 10px;
+    border: 5px var(--nav-link-color) solid;
+    border-radius: 25px;
+    margin-left: -70px;
+    margin-right: -90px;
+}
+.banner-info p{
+    margin-left: 80px;
+    margin-top: 40px;
+    margin-right: 20px;
+    color: var(--accent2-color);
+
+}
+.banner-info a{
+    margin-left: 70px;
+}
+.banner-info a:hover{
+    color: var(--accent1-color);
+}
+
+.button-box{
+    grid-column: 10/12;
+    grid-row: 6/8;
+    background-color: var(--accent1-color);
+    align-items: center;
+    justify-content: space-around;
+    border: 5px var(--nav-hover-background-color) solid;
+    border-radius: 15px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.button-box:hover{
+    background-color: var(--paragraph-background-color);
+    border: 5px var(--nav-background-color) solid;
+}
+.button-box a{
+    padding: 60px 60px 60px;
+    border-radius: 5px;
+}
+/*Css for the about page */
+
+/*Css for the projects page */

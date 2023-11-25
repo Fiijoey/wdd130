@@ -244,12 +244,15 @@ footer a:hover {
 .banner-info {
     grid-row: 4/8;
     grid-column: 6/9;
+    margin-bottom: 60px;
     background-color: var(--paragraph-background-color);
     margin-top: 10px;
     border: 5px var(--nav-link-color) solid;
     border-radius: 25px;
     margin-left: -70px;
     margin-right: -90px;
+    justify-self: center;
+    align-self: center;
 }
 
 .banner-info p {

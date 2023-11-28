@@ -151,8 +151,11 @@ header {
     align-content: center;
     align-items: center;
     background-color: var(--accent1-color);
+    font-size: .5em;
 }
-
+header a{
+    width: 110px;
+}
 nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));

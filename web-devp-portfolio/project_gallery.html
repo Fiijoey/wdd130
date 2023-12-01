@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Projects Gallery</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/styles.css">
-  <title>Projects Gallery</title>
-</head>
-
-<body>
-  <header>
-    <a href="index.html" id="logo_link"><img class="logo" src="images/Logo.png " alt="Fiifi MJ Logo"></a>
-    <nav>
-      <a class="nav-item" href="index.html">Home</a>
-      <a class="nav-item" href="project_gallery.html">Project Gallery</a>
-      <a class="nav-item" href="aboutme.html">About Me</a>
-    </nav>
-  </header>
-  <main class="gallery">
-    <h1>Images for the Project Gallery</h1>
-    <p>here are some amazing project I have worked on. Have a look.</p>
-    <!--    <div class="project-images">
+  <body>
+    <header>
+      <a href="index.html" id="logo_link"
+        ><img class="logo" src="images/Logo.png " alt="Fiifi MJ Logo"
+      /></a>
+      <nav>
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item" href="project_gallery.html">Project Gallery</a>
+        <a class="nav-item" href="aboutme.html">About Me</a>
+      </nav>
+    </header>
+    <main class="gallery">
+      <h1>Images for the Project Gallery</h1>
+      <p>here are some amazing project I have worked on. Have a look.</p>
+      <!--    <div class="project-images">
             <img src="images/Home.jpg" alt="image">
             <img src="images/work.jpg" alt="images">
             <img src="images/web3.PNG" alt="image">
@@ -34,75 +35,122 @@
         </div>
         <div class="button-box"><a href="aboutme.html">Contact Me</a></div>
         -->
-    <div class="row">
-      <div class="column">
-        <img src="images/Home.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      <div class="row">
+        <div class="column">
+          <img
+            src="images/Home.jpg"
+            onclick="openModal();currentSlide(1)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="images/work.jpg"
+            onclick="openModal();currentSlide(2)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="images/web3.PNG"
+            onclick="openModal();currentSlide(3)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="images/web4.PNG"
+            onclick="openModal();currentSlide(4)"
+            class="hover-shadow"
+          />
+        </div>
       </div>
-      <div class="column">
-        <img src="images/work.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+      <p>here are some amazing project I have worked on. Have a look.</p>
+      <div class="row">
+        <div class="column">
+          <img
+            src="images/code1.PNG"
+            onclick="openModal();currentSlide(5)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="images/Projects.jpg"
+            onclick="openModal();currentSlide(6)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="images/code4.PNG"
+            onclick="openModal();currentSlide(7)"
+            class="hover-shadow"
+          />
+        </div>
+        <div class="column">
+          <img
+            src="images/Home.jpg"
+            onclick="openModal();currentSlide(8)"
+            class="hover-shadow"
+          />
+        </div>
       </div>
-      <div class="column">
-        <img src="images/web3.PNG" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </main>
+    <footer>
+      <p>Portfolio page &copy; 2023 - Joseph Fiifi Mensah</p>
+      <p><a href="site-plan.html">Site Plan</a></p>
+      <p><a href="aboutme.html">Get to know me</a></p>
+      <div class="social">
+        <a href="#" target="_blank">
+          <img src="images/github.png" alt="github icon" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="images/twitter.png" alt="twitter icon" />
+        </a>
+        <a href="#" target="_blank">
+          <img src="images/linkedin.png" alt="linkedIn icon" />
+        </a>
       </div>
-      <div class="column">
-        <img src="images/web4.PNG" onclick="openModal();currentSlide(4)" class="hover-shadow">
-      </div>
-    </div>
-    <p>here are some amazing project I have worked on. Have a look.</p>
-    <div class="row">
-      <div class="column">
-        <img src="images/code1.PNG" onclick="openModal();currentSlide(5)" class="hover-shadow">
-      </div>
-      <div class="column">
-        <img src="images/Projects.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
-      </div>
-      <div class="column">
-        <img src="images/code4.PNG" onclick="openModal();currentSlide(7)" class="hover-shadow">
-      </div>
-      <div class="column">
-        <img src="images/Home.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
-      </div>
-    </div>
-
+    </footer>
     <!-- The Modal/Lightbox -->
     <div id="myModal" class="modal">
       <span class="close cursor" onclick="closeModal()">&times;</span>
       <div class="modal-content">
-
         <div class="mySlides">
           <div class="numbertext">1 / 8</div>
-          <img src="images/Home.jpg" style="width:100%">
+          <img src="images/Home.jpg" style="width: 100%" />
         </div>
 
         <div class="mySlides">
           <div class="numbertext">2 / 8</div>
-          <img src="images/work.jpg" style="width:100%">
+          <img src="images/work.jpg" style="width: 100%" />
         </div>
 
         <div class="mySlides">
           <div class="numbertext">3 / 8</div>
-          <img src="images/web3.PNG" style="width:100%">
+          <img src="images/web3.PNG" style="width: 100%" />
         </div>
 
         <div class="mySlides">
           <div class="numbertext">4 / 8</div>
-          <img src="images/web4.PNG" style="width:100%">
+          <img src="images/web4.PNG" style="width: 100%" />
         </div>
         <div class="mySlides">
           <div class="numbertext">5 / 8</div>
-          <img src="images/code1.PNG" style="width:100%">
+          <img src="images/code1.PNG" style="width: 100%" />
         </div>
         <div class="mySlides">
           <div class="numbertext">6 / 8</div>
-          <img src="images/Projects.jpg" style="width:100%">
+          <img src="images/Projects.jpg" style="width: 100%" />
         </div>
         <div class="mySlides">
           <div class="numbertext">7 / 8</div>
-          <img src="images/code4.PNG" style="width:100%">
+          <img src="images/code4.PNG" style="width: 100%" />
         </div>
         <div class="mySlides">
           <div class="numbertext">8 / 8</div>
-          <img src="images/Home.jpg" style="width:100%">
+          <img src="images/Home.jpg" style="width: 100%" />
         </div>
 
         <!-- Next/previous controls -->
@@ -116,19 +164,39 @@
 
         <!-- Thumbnail image controls -->
         <div class="column">
-          <img class="demo" src="images/Home.jpg"onclick="currentSlide(1)" alt="Wire Frames">
+          <img
+            class="demo"
+            src="images/Home.jpg"
+            onclick="currentSlide(1)"
+            alt="Wire Frames"
+          />
         </div>
 
         <div class="column">
-          <img class="demo" src="images/work.jpg" onclick="currentSlide(2)" alt="Codes">
+          <img
+            class="demo"
+            src="images/work.jpg"
+            onclick="currentSlide(2)"
+            alt="Codes"
+          />
         </div>
 
         <div class="column">
-          <img class="demo" src="images/web3.PNG"onclick="currentSlide(3)" alt="GUI">
+          <img
+            class="demo"
+            src="images/web3.PNG"
+            onclick="currentSlide(3)"
+            alt="GUI"
+          />
         </div>
 
         <div class="column">
-          <img class="demo" src="images/web4.PNG" onclick="currentSlide(4)" alt="Join us">
+          <img
+            class="demo"
+            src="images/web4.PNG"
+            onclick="currentSlide(4)"
+            alt="Join us"
+          />
         </div>
       </div>
     </div>
@@ -145,11 +213,11 @@
       showSlides(slideIndex);
 
       function plusSlides(n) {
-        showSlides(slideIndex += n);
+        showSlides((slideIndex += n));
       }
 
       function currentSlide(n) {
-        showSlides(slideIndex = n);
+        showSlides((slideIndex = n));
       }
 
       function showSlides(n) {
@@ -157,8 +225,12 @@
         var slides = document.getElementsByClassName("mySlides");
         var dots = document.getElementsByClassName("demo");
         var captionText = document.getElementById("caption");
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
         for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";
         }
@@ -170,23 +242,5 @@
         captionText.innerHTML = dots[slideIndex - 1].alt;
       }
     </script>
-  </main>
-  <footer>
-    <p>Portfolio page &copy; 2023 - Joseph Fiifi Mensah</p>
-    <p><a href="site-plan.html">Site Plan</a></p>
-    <p><a href="aboutme.html">Get to know me</a></p>
-    <div class="social">
-      <a href="#" target="_blank">
-        <img src="images/github.png" alt="github icon">
-      </a>
-      <a href="#" target="_blank">
-        <img src="images/twitter.png" alt="twitter icon">
-      </a>
-      <a href="#" target="_blank">
-        <img src="images/linkedin.png" alt="linkedIn icon">
-      </a>
-    </div>
-  </footer>
-</body>
-
+  </body>
 </html>

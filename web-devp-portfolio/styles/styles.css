@@ -169,7 +169,6 @@ nav {
     color: var(--nav-link-color);
     font-size: 1.5em;
     padding: 2.5em;
-    min-width: 120px;
 }
 
 .nav-item:hover {
